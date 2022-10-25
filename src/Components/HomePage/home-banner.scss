@@ -1,0 +1,36 @@
+.c-home-banner {
+    padding: 20px 0;
+    .is-flex {
+        display: flex;
+        padding: 0;
+    }
+    &__left {
+        width: 30%;
+        border: solid #363636 5px;
+        background: #1d1d1d;
+    }
+    &__right {
+        width: 70%;
+        border: solid #363636 5px;
+        border-left: none;
+
+        .swiper-pagination-bullet {
+            border-radius: 0;
+        }
+
+        .c-img {
+            position: relative;
+            z-index: 1;
+            padding-top: percentage(372/833);
+
+            img {
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
